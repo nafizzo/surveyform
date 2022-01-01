@@ -1,0 +1,35 @@
+;
+
+
+body{
+    background-image: repeating-linear-gradient(45deg,#B2A8B8, white);
+    text-transform: initial;
+}
+.container{
+    background:  #BEA0D3;
+    color: black;
+    max-width: 800px;
+    margin-inline: auto;
+    border-radius: 5px;
+    min-width: 370px;
+    padding: 10px;
+}
+#header{
+    color: #8A2BE2;
+    text-align: center;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+}
+
+
+#survey-form{
+    display: flex;
+    flex-direction:column;
+    
+}
+#copy{
+    position: relative;
+    top: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
