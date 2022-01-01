@@ -1,8 +1,5 @@
-;
-
-
 body{
-    background-image: repeating-linear-gradient(45deg,#B2A8B8, white);
+    background-color:black;
     text-transform: initial;
 }
 .container{
@@ -32,4 +29,7 @@ body{
     top: 60px;
     text-align: center;
     margin-bottom: 20px;
+}
+#Name-label, #email-label, #number-label{
+    padding: auto;
 }

@@ -24,47 +24,60 @@
     <div class="container">
         <form id="survey-form" action="#">
             <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label" id="name-label">Name</label>
                 <br>
             <input type="text" class="form-control" name="name" id="name" placeholder="enter your name" required>
             </div>
 
             <div class="mb-3">
-              <label for="email" class="form-label">Email address</label><br>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" id="email" placeholder="someone@something.com"  required><br>
+              <label for="email" class="form-label" id="email-label">Email address</label><br>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" id="email email-label" placeholder="someone@something.com"  required><br>
               <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
             </div>
 
             <div class="mb-3">
-              <label for="age" class="form-label">Age</label>
-              <input type="number" class="form-control" id="number"name="age"placeholder="your age" min="12" max="99" required>
+              <label for="age" class="form-label" id="number-label">Age</label>
+              <input type="number" class="form-control" id="number"name="age"placeholder="18" min="12" max="99" required>
             </div>
 
             <section class="radio-1">
                 <p>Do you like me  ? <i class="bi bi-emoji-smile-upside-down"></i></p>
 
                 <div class="mb-3 form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="like" checked required>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="like" checked required value="1">
                     <label class="form-check-label" for="like">
                     yeah sure.<i class="bi bi-emoji-heart-eyes"></i>
                     </label>
                 </div>
 
                 <div class="mb-3 form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="maybe">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="maybe" value="2">
                     <label class="form-check-label" for="maybe">
                     may be <i class="bi bi-emoji-expressionless"></i>
                     </label>
                 </div>
 
                 <div class="mb-3 form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="dislike">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="dislike" value="3">
                     <label class="form-check-label" for="dislike">
                     sorry dude, no.<i class="bi bi-emoji-dizzy"></i>
                     </label>
                 </div>
 
             </section>
+            
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="c" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="m" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checked checkbox
+                </label>
+              </div>
 
           
 
@@ -76,8 +89,7 @@
                 
                 <div class="input-group mb-3">
                     
-                    <label class="input-group-text" for="im">I'm an</label>
-                    <select class="form-select" id="im">
+                    <select class="form-select" id="dropdown">I'm an
                       <option selected>Choose...</option>
                       <option value="1">introvert</option>
                       <option value="2">extrovert</option>
@@ -95,7 +107,7 @@
             </section>
             
             <div class="submit">
-                <button type="submit" class="btn btn-primary" >Submit</button>
+                <button type="submit" class="btn btn-primary"  id="submit">Submit</button>
             </div>
           </form>
        <div id="copy">
